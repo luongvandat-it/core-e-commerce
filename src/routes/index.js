@@ -1,9 +1,11 @@
-'use strict'
-const express = require('express')
-const router = express.Router()
+"use strict";
+const express = require("express");
+const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.send('Hello World!'.repeat(100000))
-})
+router.get("/", (req, res) => {
+  res.send({
+    message: "Hello World!"
+  });
+});
 
-module.exports = router
+module.exports = router;
